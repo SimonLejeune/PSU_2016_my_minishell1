@@ -5,7 +5,7 @@
 ** Login   <simon.lejeune@epitech.eu>
 ** 
 ** Started on  Thu Jan 19 10:20:06 2017 Simon
-** Last update Thu Jan 19 15:05:19 2017 Simon
+** Last update Thu Jan 19 18:07:13 2017 Simon
 */
 
 #include <unistd.h>
@@ -27,6 +27,5 @@ int	main(int ac, char **av, char **envp)
       my_putstr("$>");
       s = get_next_line(0);
       tab = str_to_word_tab(s);
-      printf("%s\n", tab[0]);
     }
 }
