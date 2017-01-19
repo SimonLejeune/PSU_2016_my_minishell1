@@ -5,7 +5,7 @@
 ** Login   <simon.lejeune@epitech.eu>
 ** 
 ** Started on  Thu Jan 19 10:20:06 2017 Simon
-** Last update Thu Jan 19 11:12:23 2017 Simon
+** Last update Thu Jan 19 11:27:55 2017 Simon
 */
 
 #include <unistd.h>
@@ -17,9 +17,12 @@
 
 int	main(int ac, char **av, char **envp)
 {
+  char	*s;
+  
   while (1)
     {
       my_putstr("$>");
-      get_next_line(0);
+      s = get_next_line(0);
+      printf("%s\n", s);
     }
 }
