@@ -5,7 +5,7 @@
 ** Login   <simon.lejeune@epitech.eu>
 ** 
 ** Started on  Thu Jan 19 10:20:06 2017 Simon
-** Last update Thu Jan 19 11:27:55 2017 Simon
+** Last update Thu Jan 19 15:05:19 2017 Simon
 */
 
 #include <unistd.h>
@@ -18,11 +18,15 @@
 int	main(int ac, char **av, char **envp)
 {
   char	*s;
-  
+  char **tab;
+
+  s = NULL;
+  tab = NULL;
   while (1)
     {
       my_putstr("$>");
       s = get_next_line(0);
-      printf("%s\n", s);
+      tab = str_to_word_tab(s);
+      printf("%s\n", tab[0]);
     }
 }
